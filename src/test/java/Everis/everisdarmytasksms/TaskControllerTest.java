@@ -1,4 +1,4 @@
-package Everis.everisdarmytasksms;
+/*package Everis.everisdarmytasksms;
 
 import static org.mockito.Mockito.when;
 
@@ -22,3 +22,4 @@ public class TaskControllerTest {
 				);
 	}
 }
+*/
