@@ -1,8 +1,10 @@
 package Everis.everisdarmytasksms;
 
+import java.awt.print.Pageable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,10 +42,6 @@ public class TaskController {
 	  return taskService.getTask(id);
 	 }
 	
-	/* @PostMapping("/create")
-	 public Task saveTask(Task task) {
-		return taskService.saveTask(task);
-	 } */
 	@PostMapping(consumes=MediaType.APPLICATION_JSON_VALUE, produces=MediaType.APPLICATION_JSON_VALUE)
 	 public Task saveTask(@RequestBody Task task) {
 		return taskService.saveTask(task);
